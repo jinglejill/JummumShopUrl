@@ -1,0 +1,594 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EFB880D720C6103A0011AF78 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EFB880D620C6103A0011AF78 /* AppDelegate.m */; };
+		EFB880DA20C6103A0011AF78 /* DocumentBrowserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFB880D920C6103A0011AF78 /* DocumentBrowserViewController.m */; };
+		EFB880DD20C6103A0011AF78 /* DocumentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFB880DC20C6103A0011AF78 /* DocumentViewController.m */; };
+		EFB880E020C6103A0011AF78 /* Document.m in Sources */ = {isa = PBXBuildFile; fileRef = EFB880DF20C6103A0011AF78 /* Document.m */; };
+		EFB880E320C6103A0011AF78 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFB880E120C6103A0011AF78 /* Main.storyboard */; };
+		EFB880E520C6103C0011AF78 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFB880E420C6103C0011AF78 /* Assets.xcassets */; };
+		EFB880E820C6103C0011AF78 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFB880E620C6103C0011AF78 /* LaunchScreen.storyboard */; };
+		EFB880EB20C6103C0011AF78 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EFB880EA20C6103C0011AF78 /* main.m */; };
+		EFB880F520C6103C0011AF78 /* JummumShopUrlTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EFB880F420C6103C0011AF78 /* JummumShopUrlTests.m */; };
+		EFB8810020C6103C0011AF78 /* JummumShopUrlUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = EFB880FF20C6103C0011AF78 /* JummumShopUrlUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EFB880F120C6103C0011AF78 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EFB880CA20C6103A0011AF78 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EFB880D120C6103A0011AF78;
+			remoteInfo = JummumShopUrl;
+		};
+		EFB880FC20C6103C0011AF78 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EFB880CA20C6103A0011AF78 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EFB880D120C6103A0011AF78;
+			remoteInfo = JummumShopUrl;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EFB880D220C6103A0011AF78 /* JummumShopUrl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JummumShopUrl.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFB880D520C6103A0011AF78 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		EFB880D620C6103A0011AF78 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		EFB880D820C6103A0011AF78 /* DocumentBrowserViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DocumentBrowserViewController.h; sourceTree = "<group>"; };
+		EFB880D920C6103A0011AF78 /* DocumentBrowserViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DocumentBrowserViewController.m; sourceTree = "<group>"; };
+		EFB880DB20C6103A0011AF78 /* DocumentViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DocumentViewController.h; sourceTree = "<group>"; };
+		EFB880DC20C6103A0011AF78 /* DocumentViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DocumentViewController.m; sourceTree = "<group>"; };
+		EFB880DE20C6103A0011AF78 /* Document.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Document.h; sourceTree = "<group>"; };
+		EFB880DF20C6103A0011AF78 /* Document.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Document.m; sourceTree = "<group>"; };
+		EFB880E220C6103A0011AF78 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EFB880E420C6103C0011AF78 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EFB880E720C6103C0011AF78 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EFB880E920C6103C0011AF78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EFB880EA20C6103C0011AF78 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EFB880F020C6103C0011AF78 /* JummumShopUrlTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JummumShopUrlTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFB880F420C6103C0011AF78 /* JummumShopUrlTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JummumShopUrlTests.m; sourceTree = "<group>"; };
+		EFB880F620C6103C0011AF78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EFB880FB20C6103C0011AF78 /* JummumShopUrlUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JummumShopUrlUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFB880FF20C6103C0011AF78 /* JummumShopUrlUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JummumShopUrlUITests.m; sourceTree = "<group>"; };
+		EFB8810120C6103C0011AF78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EFB880CF20C6103A0011AF78 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFB880ED20C6103C0011AF78 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFB880F820C6103C0011AF78 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EFB880C920C6103A0011AF78 = {
+			isa = PBXGroup;
+			children = (
+				EFB880D420C6103A0011AF78 /* JummumShopUrl */,
+				EFB880F320C6103C0011AF78 /* JummumShopUrlTests */,
+				EFB880FE20C6103C0011AF78 /* JummumShopUrlUITests */,
+				EFB880D320C6103A0011AF78 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EFB880D320C6103A0011AF78 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EFB880D220C6103A0011AF78 /* JummumShopUrl.app */,
+				EFB880F020C6103C0011AF78 /* JummumShopUrlTests.xctest */,
+				EFB880FB20C6103C0011AF78 /* JummumShopUrlUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EFB880D420C6103A0011AF78 /* JummumShopUrl */ = {
+			isa = PBXGroup;
+			children = (
+				EFB880D520C6103A0011AF78 /* AppDelegate.h */,
+				EFB880D620C6103A0011AF78 /* AppDelegate.m */,
+				EFB880D820C6103A0011AF78 /* DocumentBrowserViewController.h */,
+				EFB880D920C6103A0011AF78 /* DocumentBrowserViewController.m */,
+				EFB880DB20C6103A0011AF78 /* DocumentViewController.h */,
+				EFB880DC20C6103A0011AF78 /* DocumentViewController.m */,
+				EFB880DE20C6103A0011AF78 /* Document.h */,
+				EFB880DF20C6103A0011AF78 /* Document.m */,
+				EFB880E120C6103A0011AF78 /* Main.storyboard */,
+				EFB880E420C6103C0011AF78 /* Assets.xcassets */,
+				EFB880E620C6103C0011AF78 /* LaunchScreen.storyboard */,
+				EFB880E920C6103C0011AF78 /* Info.plist */,
+				EFB880EA20C6103C0011AF78 /* main.m */,
+			);
+			path = JummumShopUrl;
+			sourceTree = "<group>";
+		};
+		EFB880F320C6103C0011AF78 /* JummumShopUrlTests */ = {
+			isa = PBXGroup;
+			children = (
+				EFB880F420C6103C0011AF78 /* JummumShopUrlTests.m */,
+				EFB880F620C6103C0011AF78 /* Info.plist */,
+			);
+			path = JummumShopUrlTests;
+			sourceTree = "<group>";
+		};
+		EFB880FE20C6103C0011AF78 /* JummumShopUrlUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EFB880FF20C6103C0011AF78 /* JummumShopUrlUITests.m */,
+				EFB8810120C6103C0011AF78 /* Info.plist */,
+			);
+			path = JummumShopUrlUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EFB880D120C6103A0011AF78 /* JummumShopUrl */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EFB8810420C6103C0011AF78 /* Build configuration list for PBXNativeTarget "JummumShopUrl" */;
+			buildPhases = (
+				EFB880CE20C6103A0011AF78 /* Sources */,
+				EFB880CF20C6103A0011AF78 /* Frameworks */,
+				EFB880D020C6103A0011AF78 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JummumShopUrl;
+			productName = JummumShopUrl;
+			productReference = EFB880D220C6103A0011AF78 /* JummumShopUrl.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EFB880EF20C6103C0011AF78 /* JummumShopUrlTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EFB8810720C6103C0011AF78 /* Build configuration list for PBXNativeTarget "JummumShopUrlTests" */;
+			buildPhases = (
+				EFB880EC20C6103C0011AF78 /* Sources */,
+				EFB880ED20C6103C0011AF78 /* Frameworks */,
+				EFB880EE20C6103C0011AF78 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EFB880F220C6103C0011AF78 /* PBXTargetDependency */,
+			);
+			name = JummumShopUrlTests;
+			productName = JummumShopUrlTests;
+			productReference = EFB880F020C6103C0011AF78 /* JummumShopUrlTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EFB880FA20C6103C0011AF78 /* JummumShopUrlUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EFB8810A20C6103C0011AF78 /* Build configuration list for PBXNativeTarget "JummumShopUrlUITests" */;
+			buildPhases = (
+				EFB880F720C6103C0011AF78 /* Sources */,
+				EFB880F820C6103C0011AF78 /* Frameworks */,
+				EFB880F920C6103C0011AF78 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EFB880FD20C6103C0011AF78 /* PBXTargetDependency */,
+			);
+			name = JummumShopUrlUITests;
+			productName = JummumShopUrlUITests;
+			productReference = EFB880FB20C6103C0011AF78 /* JummumShopUrlUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EFB880CA20C6103A0011AF78 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = Appxelent;
+				TargetAttributes = {
+					EFB880D120C6103A0011AF78 = {
+						CreatedOnToolsVersion = 9.4;
+					};
+					EFB880EF20C6103C0011AF78 = {
+						CreatedOnToolsVersion = 9.4;
+						TestTargetID = EFB880D120C6103A0011AF78;
+					};
+					EFB880FA20C6103C0011AF78 = {
+						CreatedOnToolsVersion = 9.4;
+						TestTargetID = EFB880D120C6103A0011AF78;
+					};
+				};
+			};
+			buildConfigurationList = EFB880CD20C6103A0011AF78 /* Build configuration list for PBXProject "JummumShopUrl" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EFB880C920C6103A0011AF78;
+			productRefGroup = EFB880D320C6103A0011AF78 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EFB880D120C6103A0011AF78 /* JummumShopUrl */,
+				EFB880EF20C6103C0011AF78 /* JummumShopUrlTests */,
+				EFB880FA20C6103C0011AF78 /* JummumShopUrlUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EFB880D020C6103A0011AF78 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFB880E820C6103C0011AF78 /* LaunchScreen.storyboard in Resources */,
+				EFB880E520C6103C0011AF78 /* Assets.xcassets in Resources */,
+				EFB880E320C6103A0011AF78 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFB880EE20C6103C0011AF78 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFB880F920C6103C0011AF78 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EFB880CE20C6103A0011AF78 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFB880EB20C6103C0011AF78 /* main.m in Sources */,
+				EFB880E020C6103A0011AF78 /* Document.m in Sources */,
+				EFB880DA20C6103A0011AF78 /* DocumentBrowserViewController.m in Sources */,
+				EFB880DD20C6103A0011AF78 /* DocumentViewController.m in Sources */,
+				EFB880D720C6103A0011AF78 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFB880EC20C6103C0011AF78 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFB880F520C6103C0011AF78 /* JummumShopUrlTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFB880F720C6103C0011AF78 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFB8810020C6103C0011AF78 /* JummumShopUrlUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EFB880F220C6103C0011AF78 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EFB880D120C6103A0011AF78 /* JummumShopUrl */;
+			targetProxy = EFB880F120C6103C0011AF78 /* PBXContainerItemProxy */;
+		};
+		EFB880FD20C6103C0011AF78 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EFB880D120C6103A0011AF78 /* JummumShopUrl */;
+			targetProxy = EFB880FC20C6103C0011AF78 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EFB880E120C6103A0011AF78 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EFB880E220C6103A0011AF78 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EFB880E620C6103C0011AF78 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EFB880E720C6103C0011AF78 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EFB8810220C6103C0011AF78 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		EFB8810320C6103C0011AF78 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EFB8810520C6103C0011AF78 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DF8AZLDC5D;
+				INFOPLIST_FILE = JummumShopUrl/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.appxelent.JummumShopUrl;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EFB8810620C6103C0011AF78 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DF8AZLDC5D;
+				INFOPLIST_FILE = JummumShopUrl/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.appxelent.JummumShopUrl;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EFB8810820C6103C0011AF78 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DF8AZLDC5D;
+				INFOPLIST_FILE = JummumShopUrlTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.appxelent.JummumShopUrlTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JummumShopUrl.app/JummumShopUrl";
+			};
+			name = Debug;
+		};
+		EFB8810920C6103C0011AF78 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DF8AZLDC5D;
+				INFOPLIST_FILE = JummumShopUrlTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.appxelent.JummumShopUrlTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JummumShopUrl.app/JummumShopUrl";
+			};
+			name = Release;
+		};
+		EFB8810B20C6103C0011AF78 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DF8AZLDC5D;
+				INFOPLIST_FILE = JummumShopUrlUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.appxelent.JummumShopUrlUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = JummumShopUrl;
+			};
+			name = Debug;
+		};
+		EFB8810C20C6103C0011AF78 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DF8AZLDC5D;
+				INFOPLIST_FILE = JummumShopUrlUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.appxelent.JummumShopUrlUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = JummumShopUrl;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EFB880CD20C6103A0011AF78 /* Build configuration list for PBXProject "JummumShopUrl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EFB8810220C6103C0011AF78 /* Debug */,
+				EFB8810320C6103C0011AF78 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EFB8810420C6103C0011AF78 /* Build configuration list for PBXNativeTarget "JummumShopUrl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EFB8810520C6103C0011AF78 /* Debug */,
+				EFB8810620C6103C0011AF78 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EFB8810720C6103C0011AF78 /* Build configuration list for PBXNativeTarget "JummumShopUrlTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EFB8810820C6103C0011AF78 /* Debug */,
+				EFB8810920C6103C0011AF78 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EFB8810A20C6103C0011AF78 /* Build configuration list for PBXNativeTarget "JummumShopUrlUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EFB8810B20C6103C0011AF78 /* Debug */,
+				EFB8810C20C6103C0011AF78 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EFB880CA20C6103A0011AF78 /* Project object */;
+}
