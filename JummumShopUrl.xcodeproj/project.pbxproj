@@ -17,6 +17,10 @@
 		EFB880EB20C6103C0011AF78 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EFB880EA20C6103C0011AF78 /* main.m */; };
 		EFB880F520C6103C0011AF78 /* JummumShopUrlTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EFB880F420C6103C0011AF78 /* JummumShopUrlTests.m */; };
 		EFB8810020C6103C0011AF78 /* JummumShopUrlUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = EFB880FF20C6103C0011AF78 /* JummumShopUrlUITests.m */; };
+		EFB8811220C610640011AF78 /* launchScreen.pdf in Resources */ = {isa = PBXBuildFile; fileRef = EFB8810E20C610640011AF78 /* launchScreen.pdf */; };
+		EFB8811320C610640011AF78 /* jummumShopTest.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EFB8810F20C610640011AF78 /* jummumShopTest.jpg */; };
+		EFB8811420C610640011AF78 /* color theme.pdf in Resources */ = {isa = PBXBuildFile; fileRef = EFB8811020C610640011AF78 /* color theme.pdf */; };
+		EFB8811520C610640011AF78 /* loginScreen.pdf in Resources */ = {isa = PBXBuildFile; fileRef = EFB8811120C610640011AF78 /* loginScreen.pdf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +61,10 @@
 		EFB880FB20C6103C0011AF78 /* JummumShopUrlUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JummumShopUrlUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFB880FF20C6103C0011AF78 /* JummumShopUrlUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JummumShopUrlUITests.m; sourceTree = "<group>"; };
 		EFB8810120C6103C0011AF78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EFB8810E20C610640011AF78 /* launchScreen.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = launchScreen.pdf; sourceTree = "<group>"; };
+		EFB8810F20C610640011AF78 /* jummumShopTest.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = jummumShopTest.jpg; sourceTree = "<group>"; };
+		EFB8811020C610640011AF78 /* color theme.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "color theme.pdf"; sourceTree = "<group>"; };
+		EFB8811120C610640011AF78 /* loginScreen.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = loginScreen.pdf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +95,7 @@
 		EFB880C920C6103A0011AF78 = {
 			isa = PBXGroup;
 			children = (
+				EFB8810D20C610640011AF78 /* JummumShop Url */,
 				EFB880D420C6103A0011AF78 /* JummumShopUrl */,
 				EFB880F320C6103C0011AF78 /* JummumShopUrlTests */,
 				EFB880FE20C6103C0011AF78 /* JummumShopUrlUITests */,
@@ -140,6 +149,17 @@
 				EFB8810120C6103C0011AF78 /* Info.plist */,
 			);
 			path = JummumShopUrlUITests;
+			sourceTree = "<group>";
+		};
+		EFB8810D20C610640011AF78 /* JummumShop Url */ = {
+			isa = PBXGroup;
+			children = (
+				EFB8810E20C610640011AF78 /* launchScreen.pdf */,
+				EFB8810F20C610640011AF78 /* jummumShopTest.jpg */,
+				EFB8811020C610640011AF78 /* color theme.pdf */,
+				EFB8811120C610640011AF78 /* loginScreen.pdf */,
+			);
+			path = "JummumShop Url";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -245,9 +265,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EFB8811520C610640011AF78 /* loginScreen.pdf in Resources */,
+				EFB8811320C610640011AF78 /* jummumShopTest.jpg in Resources */,
+				EFB8811420C610640011AF78 /* color theme.pdf in Resources */,
 				EFB880E820C6103C0011AF78 /* LaunchScreen.storyboard in Resources */,
 				EFB880E520C6103C0011AF78 /* Assets.xcassets in Resources */,
 				EFB880E320C6103A0011AF78 /* Main.storyboard in Resources */,
+				EFB8811220C610640011AF78 /* launchScreen.pdf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
