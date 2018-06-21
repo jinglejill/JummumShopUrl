@@ -17,10 +17,11 @@
 		EFB880EB20C6103C0011AF78 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EFB880EA20C6103C0011AF78 /* main.m */; };
 		EFB880F520C6103C0011AF78 /* JummumShopUrlTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EFB880F420C6103C0011AF78 /* JummumShopUrlTests.m */; };
 		EFB8810020C6103C0011AF78 /* JummumShopUrlUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = EFB880FF20C6103C0011AF78 /* JummumShopUrlUITests.m */; };
-		EFB8811220C610640011AF78 /* launchScreen.pdf in Resources */ = {isa = PBXBuildFile; fileRef = EFB8810E20C610640011AF78 /* launchScreen.pdf */; };
-		EFB8811320C610640011AF78 /* jummumShopTest.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EFB8810F20C610640011AF78 /* jummumShopTest.jpg */; };
-		EFB8811420C610640011AF78 /* color theme.pdf in Resources */ = {isa = PBXBuildFile; fileRef = EFB8811020C610640011AF78 /* color theme.pdf */; };
-		EFB8811520C610640011AF78 /* loginScreen.pdf in Resources */ = {isa = PBXBuildFile; fileRef = EFB8811120C610640011AF78 /* loginScreen.pdf */; };
+		EFB8811720C610C40011AF78 /* JMSCredentialsDbGet.php in Resources */ = {isa = PBXBuildFile; fileRef = EFB8811620C610C40011AF78 /* JMSCredentialsDbGet.php */; };
+		EFB8811920C61F2C0011AF78 /* JMSCredentialsValidate.php in Resources */ = {isa = PBXBuildFile; fileRef = EFB8811820C61F2C0011AF78 /* JMSCredentialsValidate.php */; };
+		EFB8812120C6228C0011AF78 /* JMSDeviceInsert.php in Resources */ = {isa = PBXBuildFile; fileRef = EFB8812020C6228C0011AF78 /* JMSDeviceInsert.php */; };
+		EFB8812520C6512E0011AF78 /* dbConnect.php in Resources */ = {isa = PBXBuildFile; fileRef = EFB8812420C6512E0011AF78 /* dbConnect.php */; };
+		EFB8812720C656990011AF78 /* JMSWriteLog.php in Resources */ = {isa = PBXBuildFile; fileRef = EFB8812620C656990011AF78 /* JMSWriteLog.php */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,10 +62,11 @@
 		EFB880FB20C6103C0011AF78 /* JummumShopUrlUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JummumShopUrlUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFB880FF20C6103C0011AF78 /* JummumShopUrlUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JummumShopUrlUITests.m; sourceTree = "<group>"; };
 		EFB8810120C6103C0011AF78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EFB8810E20C610640011AF78 /* launchScreen.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = launchScreen.pdf; sourceTree = "<group>"; };
-		EFB8810F20C610640011AF78 /* jummumShopTest.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = jummumShopTest.jpg; sourceTree = "<group>"; };
-		EFB8811020C610640011AF78 /* color theme.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "color theme.pdf"; sourceTree = "<group>"; };
-		EFB8811120C610640011AF78 /* loginScreen.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = loginScreen.pdf; sourceTree = "<group>"; };
+		EFB8811620C610C40011AF78 /* JMSCredentialsDbGet.php */ = {isa = PBXFileReference; lastKnownFileType = text.script.php; path = JMSCredentialsDbGet.php; sourceTree = "<group>"; };
+		EFB8811820C61F2C0011AF78 /* JMSCredentialsValidate.php */ = {isa = PBXFileReference; lastKnownFileType = text.script.php; path = JMSCredentialsValidate.php; sourceTree = "<group>"; };
+		EFB8812020C6228C0011AF78 /* JMSDeviceInsert.php */ = {isa = PBXFileReference; lastKnownFileType = text.script.php; path = JMSDeviceInsert.php; sourceTree = "<group>"; };
+		EFB8812420C6512E0011AF78 /* dbConnect.php */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.php; path = dbConnect.php; sourceTree = "<group>"; };
+		EFB8812620C656990011AF78 /* JMSWriteLog.php */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.php; path = JMSWriteLog.php; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,10 +156,11 @@
 		EFB8810D20C610640011AF78 /* JummumShop Url */ = {
 			isa = PBXGroup;
 			children = (
-				EFB8810E20C610640011AF78 /* launchScreen.pdf */,
-				EFB8810F20C610640011AF78 /* jummumShopTest.jpg */,
-				EFB8811020C610640011AF78 /* color theme.pdf */,
-				EFB8811120C610640011AF78 /* loginScreen.pdf */,
+				EFB8812620C656990011AF78 /* JMSWriteLog.php */,
+				EFB8812420C6512E0011AF78 /* dbConnect.php */,
+				EFB8811620C610C40011AF78 /* JMSCredentialsDbGet.php */,
+				EFB8811820C61F2C0011AF78 /* JMSCredentialsValidate.php */,
+				EFB8812020C6228C0011AF78 /* JMSDeviceInsert.php */,
 			);
 			path = "JummumShop Url";
 			sourceTree = "<group>";
@@ -265,13 +268,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EFB8811520C610640011AF78 /* loginScreen.pdf in Resources */,
-				EFB8811320C610640011AF78 /* jummumShopTest.jpg in Resources */,
-				EFB8811420C610640011AF78 /* color theme.pdf in Resources */,
+				EFB8812120C6228C0011AF78 /* JMSDeviceInsert.php in Resources */,
+				EFB8812520C6512E0011AF78 /* dbConnect.php in Resources */,
+				EFB8811920C61F2C0011AF78 /* JMSCredentialsValidate.php in Resources */,
+				EFB8811720C610C40011AF78 /* JMSCredentialsDbGet.php in Resources */,
 				EFB880E820C6103C0011AF78 /* LaunchScreen.storyboard in Resources */,
+				EFB8812720C656990011AF78 /* JMSWriteLog.php in Resources */,
 				EFB880E520C6103C0011AF78 /* Assets.xcassets in Resources */,
 				EFB880E320C6103A0011AF78 /* Main.storyboard in Resources */,
-				EFB8811220C610640011AF78 /* launchScreen.pdf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
