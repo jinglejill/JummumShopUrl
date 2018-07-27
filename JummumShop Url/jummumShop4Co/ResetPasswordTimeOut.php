@@ -10,7 +10,7 @@ body {
 </style>
 </head>
 <body text="#FFFFFF" style="background-color:#FF3C4B">
-<p>&nbsp;<img class="" src="http://www.jummum.co/OM/jummumOMLogo.png" alt="" width="120" /></p>
+<p>&nbsp;<img class="" src="http://www.jummum.co/jummumShop4/jummumLogo.png" alt="" width="120" /></p>
 <p>&nbsp;</p>
 ไม่สามารถรีเซ็ตรหัสผ่านได้ กรุณาส่งคำขอเปลี่ยนรหัสผ่านอีกครั้งหนึ่ง
 <p>&nbsp;</p>

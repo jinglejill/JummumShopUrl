@@ -1,6 +1,6 @@
 <?php
     include_once("dbConnect.php");//
-    setConnectionValue('FFD');
+    setConnectionValue("OM");
     writeToLog("file: " . basename(__FILE__) . ", user: " . $_POST["modifiedUser"]);
     printAllPost();
     

@@ -44,7 +44,7 @@
     
     
     //get last DbName
-    $sql = "select * from FFD.`device` where DeviceToken = '$deviceToken'";
+    $sql = "select * from OM.`device` where DeviceToken = '$deviceToken'";
     $selectedRow = getSelectedRow($sql);
     if(sizeof($selectedRow)>0)
     {
@@ -62,7 +62,7 @@
             }
             
             
-            $sql = "delete from FFD.`device` where DeviceToken = '$deviceToken'";
+            $sql = "delete from OM.`device` where DeviceToken = '$deviceToken'";
             $ret = doQueryTask($sql);
             if($ret != "")
             {
@@ -75,8 +75,8 @@
             
             
             
-            //ffd query statement
-            $sql = "insert into FFD.`device` (`DbName`,`DeviceToken`) values('$dbName','$deviceToken')";
+            //OM query statement
+            $sql = "insert into OM.`device` (`DbName`,`DeviceToken`) values('$dbName','$deviceToken')";
             $ret = doQueryTask($sql);
             if($ret != "")
             {
@@ -103,8 +103,8 @@
     }
     else
     {
-        //ffd query statement
-        $sql = "insert into FFD.`device` (`DbName`,`DeviceToken`) values('$dbName','$deviceToken')";
+        //OM query statement
+        $sql = "insert into OM.`device` (`DbName`,`DeviceToken`) values('$dbName','$deviceToken')";
         $ret = doQueryTask($sql);
         if($ret != "")
         {
@@ -130,8 +130,8 @@
     }
     
     
-    //update ffd.branch
-    $sql = "select * from FFD.Branch where DbName = '$dbName'";
+    //update OM.branch
+    $sql = "select * from OM.Branch where DbName = '$dbName'";
     $selectedRow = getSelectedRow($sql);
     $currentDeviceTokenReceiveOrder = $selectedRow[0]["DeviceTokenReceiveOrder"];
     $arrDeviceTokenReceiveOrder = explode(",",$currentDeviceTokenReceiveOrder);
@@ -140,11 +140,11 @@
     {
         if($currentDeviceTokenReceiveOrder == "")
         {
-            $sql = "update FFD.Branch set DeviceTokenReceiveOrder = '$deviceToken',modifiedUser = '$modifiedUser', modifiedDate = '$modifiedDate' where DbName = '$dbName'";
+            $sql = "update OM.Branch set DeviceTokenReceiveOrder = '$deviceToken',modifiedUser = '$modifiedUser', modifiedDate = '$modifiedDate' where DbName = '$dbName'";
         }
         else
         {
-            $sql = "update FFD.Branch set DeviceTokenReceiveOrder = concat(DeviceTokenReceiveOrder,',','$deviceToken'),modifiedUser = '$modifiedUser', modifiedDate = '$modifiedDate' where DbName = '$dbName'";
+            $sql = "update OM.Branch set DeviceTokenReceiveOrder = concat(DeviceTokenReceiveOrder,',','$deviceToken'),modifiedUser = '$modifiedUser', modifiedDate = '$modifiedDate' where DbName = '$dbName'";
         }
     }    
     $ret = doQueryTask($sql);

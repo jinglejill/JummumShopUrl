@@ -60,7 +60,7 @@
     
     //push sync to other device
     $pushSyncDeviceTokenReceiveOrder = array();
-    $sql = "select * from FFD.device where dbName = '$dbName';";
+    $sql = "select * from OM.device where dbName = '$dbName';";
     $selectedRow = getSelectedRow($sql);
     for($i=0; $i<sizeof($selectedRow); $i++)
     {

@@ -1,7 +1,6 @@
 <?php
     include_once("dbConnect.php");
     setConnectionValue($_POST["dbName"]);
-//    setConnectionValue("FFD");
     writeToLog("file: " . basename(__FILE__) . ", user: " . $_POST["modifiedUser"]);
     printAllPost();
     ini_set("memory_limit","-1");
@@ -19,7 +18,7 @@
     
     
     
-    $sql = "select * from ffd.branch where dbName = '$dbName'";
+    $sql = "select * from OM.branch where dbName = '$dbName'";
     $selectedRow = getSelectedRow($sql);
     $branchID = $selectedRow[0]["BranchID"];
     
@@ -28,7 +27,7 @@
     
     
     
-    $sql = "select * from setting union select SettingID+1000, `KeyName`, `Value`,Type, Remark, `ModifiedUser`, `ModifiedDate` from FFD.setting where type = 2;";
+    $sql = "select * from setting union select SettingID+1000, `KeyName`, `Value`,Type, Remark, `ModifiedUser`, `ModifiedDate` from OM.setting where type = 2;";
     $sql .= "select * from printer;";
     $sql .= "select * from customerTable;";
     $sql .= "select * from menuType;";

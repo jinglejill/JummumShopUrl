@@ -112,7 +112,7 @@
     $selectedRow = getSelectedRow($sql);
     if(sizeof($selectedRow)==0)
     {
-        $sql = "select UrlNoti,AlarmShop from FFD.branch where branchID = '$branchID'";
+        $sql = "select UrlNoti,AlarmShop from OM.branch where branchID = '$branchID'";
         $selectedRow = getSelectedRow($sql);
         $urlNoti = $selectedRow[0]["UrlNoti"];
         $alarmShop = $selectedRow[0]["AlarmShop"];
@@ -121,7 +121,7 @@
             //alarmShopOff
             //query statement
             $ledStatus = 0;
-            $sql = "update FFD.Branch set LedStatus = '$ledStatus', ModifiedUser = '$modifiedUser', ModifiedDate = '$modifiedDate' where branchID = '$branchID';";
+            $sql = "update OM.Branch set LedStatus = '$ledStatus', ModifiedUser = '$modifiedUser', ModifiedDate = '$modifiedDate' where branchID = '$branchID';";
             $ret = doQueryTask($sql);
             if($ret != "")
             {
@@ -172,7 +172,7 @@
     
     //push sync to other device
     $pushSyncDeviceTokenReceiveOrder = array();
-    $sql = "select * from FFD.device left join FFD.Branch on FFD.device.DbName = FFD.Branch.DbName where branchID = '$branchID';";
+    $sql = "select * from OM.device left join OM.Branch on OM.device.DbName = OM.Branch.DbName where branchID = '$branchID';";
     $selectedRow = getSelectedRow($sql);
     for($i=0; $i<sizeof($selectedRow); $i++)
     {

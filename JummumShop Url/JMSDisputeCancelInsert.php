@@ -95,7 +95,7 @@
 
         //push sync to other device
         $pushSyncDeviceTokenReceiveOrder = array();
-        $sql = "select * from FFD.device left join FFD.Branch on FFD.device.DbName = FFD.Branch.DbName where branchID = '$branchID';";
+        $sql = "select * from OM.device left join OM.Branch on OM.device.DbName = OM.Branch.DbName where branchID = '$branchID';";
         $selectedRow = getSelectedRow($sql);
         for($i=0; $i<sizeof($selectedRow); $i++)
         {

@@ -59,7 +59,7 @@
     
     
     //update receipt status at JUMMUM
-    $sql = "select * from FFD.Branch where dbName = '$dbName';";
+    $sql = "select * from OM.Branch where dbName = '$dbName';";
     $selectedRow = getSelectedRow($sql);
     $branchID = $selectedRow[0]["BranchID"];
     

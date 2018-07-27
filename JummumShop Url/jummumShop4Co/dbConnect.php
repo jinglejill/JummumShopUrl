@@ -238,7 +238,7 @@
         
         
         // Create connection
-        $con=mysqli_connect("localhost","JUMMUM","123456",$dbName);
+        $con=mysqli_connect("localhost","FFD","123456",$dbName);
         
         
         $timeZone = mysqli_query($con,"SET SESSION time_zone = '+07:00'");
@@ -425,7 +425,8 @@
             if($msg == '')
             {
                 $paramBody = array(
-                                   'content-available' => $contentAvailable
+                                   'sound' => "default"
+                                   ,'content-available' => $contentAvailable
                                    ,'receiptID' => $receiptID
                                    );
             }
@@ -444,7 +445,8 @@
             if($msg == '')
             {
                 $paramBody = array(
-                                   'category' => $category
+                                   'sound' => "default"
+                                   ,'category' => $category
                                    ,'content-available' => $contentAvailable
                                    ,'receiptID' => $receiptID
                                    );
@@ -461,14 +463,36 @@
             }
         }
         
-        foreach($deviceToken as $eachDeviceToken)
+        $arrDeviceToken = explode(",",$deviceToken);
+        foreach($arrDeviceToken as $eachDeviceToken)
         {
-            if(strlen($eachDeviceToken) == 64)
-            {
-                sendPushNotificationWithPath($eachDeviceToken, $paramBody, $path, $passForCk ,$paramBody2);
-            }
-        }
+            sendPushNotificationWithPath($eachDeviceToken, $paramBody, $path, $passForCk ,$paramBody2);
+        }        
     }
+//    function sendPushNotificationToDeviceWithPath($deviceToken,$path,$passForCk,$msg,$receiptID,$category,$contentAvailable)
+//    {
+//        if($category == '')
+//        {
+//            $paramBody = array(
+//                               'alert' => $msg
+//                               ,'sound' => "default"
+//                               ,'content-available' => $contentAvailable
+//                               ,'receiptID' => $receiptID
+//                               );
+//        }
+//        else
+//        {
+//            $paramBody = array(
+//                               'alert' => $msg
+//                               ,'sound' => "default"
+//                               ,'category' => $category
+//                               ,'content-available' => $contentAvailable
+//                               ,'receiptID' => $receiptID
+//                               );
+//        }
+//
+//        sendPushNotificationWithPath($deviceToken, $paramBody, $path, $passForCk ,$paramBody2);
+//    }
     
     function doApplePushNotificationTask($con,$user,$deviceToken,$badge)
     {
@@ -783,7 +807,7 @@
         
 
         $ctx = stream_context_create();
-        stream_context_set_option($ctx, 'ssl', 'local_cert', "$path".'ck.pem');
+        stream_context_set_option($ctx, 'ssl', 'local_cert', "$path".'ck.pem');//./../../FFD/MAMARIN5/
         stream_context_set_option($ctx, 'ssl', 'passphrase', $pass);
         
         
@@ -987,26 +1011,5 @@
             $randomString .= $characters[rand(0, $charactersLength - 1)];
         }
         return $randomString;
-    }
-    
-    function getDayOfWeekText($dayOfWeek)
-    {
-        switch($dayOfWeek)
-        {
-            case 1:
-                return "Mon";
-            case 2:
-                return "Tue\t";
-            case 3:
-                return "Wed";
-            case 4:
-                return "Thu\t";
-            case 5:
-                return "Fri\t";
-            case 6:
-                return "Sat\t";
-            case 7:
-                return "Sun\t";
-        }
     }
 ?>

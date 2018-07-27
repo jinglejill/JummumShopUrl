@@ -45,7 +45,7 @@
         
         
         
-        $sql = "INSERT INTO FFD.`forgotpassword`(`CodeReset`, `Email`, `RequestDate`, `Status`, `DbName`, `ModifiedUser`, `ModifiedDate`) VALUES ('$codeReset','$username','$requestDate','1','$dbName','$modifiedUser',now())";
+        $sql = "INSERT INTO OM.`forgotpassword`(`CodeReset`, `Email`, `RequestDate`, `Status`, `DbName`, `ModifiedUser`, `ModifiedDate`) VALUES ('$codeReset','$username','$requestDate','1','$dbName','$modifiedUser',now())";
         $ret = doQueryTask($sql);
         if($ret != "")
         {

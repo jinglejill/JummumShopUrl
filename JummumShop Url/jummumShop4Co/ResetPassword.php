@@ -48,7 +48,7 @@ function validateForm()
 </script>
 </head>
 <body text="#FFFFFF" style="background-color:#FF3C4B">
-<p>&nbsp;<img class="" src="http://www.jummum.co/OM/jummumOMLogo.png" alt="" width="120" /></p>
+<p>&nbsp;<img class="" src="http://www.jummum.co/jummumShop4/jummumLogo.png" alt="" width="120" /></p>
 <form name="resetPasswordForm" action="./resetpassword.php?codereset=<?=$_GET['codereset']?>" onsubmit="return validateForm()" method="post">
 <p>&nbsp;</p>
 <p>รหัสผ่านใหม่:<br /><input name="password" type="password" /></p>
@@ -69,7 +69,7 @@ function validateForm()
 </tr>
 <?php
     include_once("dbConnect.php");
-    setConnectionValue("OM");
+    setConnectionValue("FFD");
     writeToLog("file: " . basename(__FILE__) . ", user: " . $_POST["modifiedUser"]);
     printAllPost();
     
