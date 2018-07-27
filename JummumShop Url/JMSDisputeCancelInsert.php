@@ -1,6 +1,6 @@
 <?php
     include_once("dbConnect.php");
-    setConnectionValue($_POST["dbName"]);
+    setConnectionValue("JUMMUM4");
     writeToLog("file: " . basename(__FILE__) . ", user: " . $_POST["modifiedUser"]);
     printAllPost();
     
@@ -100,7 +100,7 @@
         for($i=0; $i<sizeof($selectedRow); $i++)
         {
             $deviceToken = $selectedRow[$i]["DeviceToken"];
-            array_push($pushSyncDeviceTokenReceiveOrder,deviceToken);
+            array_push($pushSyncDeviceTokenReceiveOrder,$deviceToken);
         }
         
         $msg = "Order cancelled";

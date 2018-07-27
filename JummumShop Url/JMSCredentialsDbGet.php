@@ -1,5 +1,5 @@
 <?php
-    include_once("dbConnect.php");//
+    include_once("dbConnect.php");
     setConnectionValue("OM");
     writeToLog("file: " . basename(__FILE__) . ", user: " . $_POST["modifiedUser"]);
     printAllPost();

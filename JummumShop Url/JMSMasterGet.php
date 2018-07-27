@@ -28,7 +28,6 @@
     
     
     $sql = "select * from setting union select SettingID+1000, `KeyName`, `Value`,Type, Remark, `ModifiedUser`, `ModifiedDate` from OM.setting where type = 2;";
-    $sql .= "select * from printer;";
     $sql .= "select * from customerTable;";
     $sql .= "select * from menuType;";
     $sql .= "select * from menu;";

@@ -179,6 +179,15 @@
         }
     }
     
+    function getToPost()
+    {
+        global $con;
+        foreach ($_GET as $param_name => $param_val)
+        {
+            $_POST['$param_name'] = mysqli_real_escape_string($con,$param_val);
+        }
+    }
+    
     function putAlertToDevice()
     {
 //        global $con;
@@ -238,7 +247,7 @@
         
         
         // Create connection
-        $con=mysqli_connect("localhost","JUMMUM","123456",$dbName);
+        $con=mysqli_connect("localhost","FFD","123456",$dbName);
         
         
         $timeZone = mysqli_query($con,"SET SESSION time_zone = '+07:00'");

@@ -130,33 +130,6 @@
     }
     
     
-    //update OM.branch
-    $sql = "select * from OM.Branch where DbName = '$dbName'";
-    $selectedRow = getSelectedRow($sql);
-    $currentDeviceTokenReceiveOrder = $selectedRow[0]["DeviceTokenReceiveOrder"];
-    $arrDeviceTokenReceiveOrder = explode(",",$currentDeviceTokenReceiveOrder);
-    
-    if(!in_array($deviceToken, $arrDeviceTokenReceiveOrder))
-    {
-        if($currentDeviceTokenReceiveOrder == "")
-        {
-            $sql = "update OM.Branch set DeviceTokenReceiveOrder = '$deviceToken',modifiedUser = '$modifiedUser', modifiedDate = '$modifiedDate' where DbName = '$dbName'";
-        }
-        else
-        {
-            $sql = "update OM.Branch set DeviceTokenReceiveOrder = concat(DeviceTokenReceiveOrder,',','$deviceToken'),modifiedUser = '$modifiedUser', modifiedDate = '$modifiedDate' where DbName = '$dbName'";
-        }
-    }    
-    $ret = doQueryTask($sql);
-    if($ret != "")
-    {
-        mysqli_rollback($con);
-        //            putAlertToDevice();
-        echo json_encode($ret);
-        exit();
-    }
-    
-    
     
     
     
