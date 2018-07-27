@@ -56,7 +56,7 @@
         }
         
         
-        sendEmail($username,"Reset password from Jummum Shop",$emailBody);
+        sendEmail($username,"Reset password from JUMMUM OM",$emailBody);
     }
     
     

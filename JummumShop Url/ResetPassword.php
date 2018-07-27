@@ -119,7 +119,7 @@ function validateForm()
             
             if(time()-StrToTime($requestDate) > 2*60*60)//2 hours
             {
-                header("Location: http://www.jummum.co/jummum4/ResetPasswordTimeOut.php");
+                header("Location: http://www.jummum.co/OM/ResetPasswordTimeOut.php");
                 //                echo "ไม่สามารถรีเซ็ตรหัสผ่านได้ กรุณาส่งคำขอเปลี่ยนรหัสผ่านอีกครั้งหนึ่ง";
             }
             else
